@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <!--Javascript-->
+    <script>
+        selection = window.prompt("What type of calculation do you wish to perform? Enter 1 for Addition, 2 for Subtraction, 3 for Multiplication, 4 for Division")
+        selection = parseInt(selection)
+
+        
+        if (selection === 1){
+            var1 = window.prompt("Enter First Number: ")
+            var2 = window.prompt("Enter Second Number: ")
+            var1 = parseFloat(var1)
+            var2 = parseFloat(var2)
+            document.write(var1 + var2)
+        }else if(selection === 2){
+            var1 = window.prompt("Enter First Number: ")
+            var2 = window.prompt("Enter Second Number: ")
+            var1 = parseFloat(var1)
+            var2 = parseFloat(var2)
+            document.write(var1 - var2)
+        }else if (selection === 3){
+            var1 = window.prompt("Enter First Number: ")
+            var2 = window.prompt("Enter Second Number: ")
+            var1 = parseFloat(var1)
+            var2 = parseFloat(var2)
+            document.write(var1 * var2)
+        }else if (selection === 4){
+            var1 = window.prompt("Enter First Number: ")
+            var2 = window.prompt("Enter Second Number: ")
+            var1 = parseFloat(var1)
+            var2 = parseFloat(var2)
+            document.write(var1 / var2)
+        }else{
+            document.write("Selection not valid")
+        }
+
+
+        
+    </script>
+</body>
+</html>
